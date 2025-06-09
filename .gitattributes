@@ -1,2 +1,16 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+
+*.pyc
+*.ini
+/venv
+controllers/__pycache__/
+config/__pycache__/
+routes/__pycache__/
+moduels/__pycache__/
+__pycache__/
+service-account-key.json
+backend/hostel.log
+backend/key.json
+frontend/src/store/lib/axios.js
+backend/.env
+backend/venv/
+frontend/package-lock.json
