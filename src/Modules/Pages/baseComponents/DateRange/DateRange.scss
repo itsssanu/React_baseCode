@@ -1,0 +1,92 @@
+/* General styling */
+.hide-arrow .anticon svg {
+  display: none;
+}
+
+.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+  border-color: var(--primary-color) !important;
+}
+
+.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-selected:not(.ant-picker-cell-disabled) .ant-picker-cell-inner {
+  background: var(--primary-color) !important;
+  color: #fff !important;
+}
+
+.ant-picker-dropdown .ant-picker-cell:hover .ant-picker-cell-inner {
+  background-color: var(--secondary-color) !important;
+  color: #000 !important;
+}
+
+.ant-picker-dropdown .ant-picker-header:hover {
+  color: var(--primary-color) !important;
+}
+
+.ant-picker-dropdown .ant-picker-year-panel .ant-picker-cell:hover,
+.ant-picker-dropdown .ant-picker-month-panel .ant-picker-cell:hover {
+  background-color: var(--secondary-color) !important;
+  color: #000 !important;
+}
+
+.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner:focus {
+  border: 4px solid var(--primary-color);
+}
+
+.ant-picker-dropdown .ant-picker-header-view>button {
+  color: var(--primary-color) !important;
+}
+
+.ant-picker-now-btn {
+  color: var(--primary-color) !important;
+}
+
+.ant-picker-now-btn:hover {
+  color: var(--primary-color) !important;
+}
+
+.ant-picker-dropdown .ant-picker-header>button {
+  color: var(--primary-color) !important;
+}
+
+.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-end) .ant-picker-cell-inner {
+  background: var(--primary-color) !important;
+  color: #fff !important;
+}
+
+.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-start) .ant-picker-cell-inner {
+  background: var(--primary-color) !important;
+  color: #fff !important;
+}
+
+.ant-picker-range .ant-picker-active-bar {
+  bottom: -1px;
+  height: 2px;
+  background: var(--primary-color) !important;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+  pointer-events: none;
+}
+
+.ant-picker-dropdown .ant-picker-panel-container .ant-picker-panels {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  direction: ltr;
+
+  @media only screen and (max-width: 767px) {
+    display: grid;
+  }
+}
+
+.ant-picker-dropdown .ant-picker-range-wrapper {
+  display: flex;
+  position: relative;
+
+  @media only screen and (max-width: 767px) {
+    justify-content: center;
+  }
+}
+
+.ant-btn-variant-solid {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+  box-shadow: none;
+}

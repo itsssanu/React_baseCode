@@ -1,0 +1,305 @@
+.modal_background {
+
+    .ant-select-focused .ant-select-selector,
+    .ant-select-selector:focus,
+    .ant-select-selector:active,
+    .ant-select-open .ant-select-selector {
+        border-color: #d9d9d9 !important;
+        box-shadow: none !important;
+    }
+
+    .ant-select .ant-select-selection-placeholder {
+        color: #abaaaa !important;
+    }
+
+
+    // Remove focus styles globally
+    * {
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+            border-color: inherit !important;
+        }
+
+        &:focus-visible {
+            outline: none !important;
+            box-shadow: none !important;
+            border-color: inherit !important;
+        }
+    }
+
+    // Reset general modal styles
+
+
+    // Reset form element styles with focus removal
+    .ant-input,
+    .ant-select,
+    .ant-checkbox,
+    // .ant-radio,
+    .ant-switch,
+    .ant-tree-select,
+    .ant-picker,
+    .ant-btn {
+
+        &:focus,
+        &-focused,
+        &:focus-visible,
+        &:hover {
+            outline: none !important;
+            box-shadow: none !important;
+            border-color: inherit !important;
+        }
+    }
+
+    // Additional focus removal for Select
+    .ant-select {
+        &-selector {
+
+            &:focus,
+            &:focus-visible {
+                outline: none !important;
+                box-shadow: none !important;
+                border-color: inherit !important;
+            }
+        }
+    }
+
+    .modal__form-el {
+        &-field {
+            all: unset;
+            width: 100%;
+            padding: 10px !important;
+
+            &:focus,
+            &:focus-visible {
+                outline: none !important;
+                box-shadow: none !important;
+                border-color: inherit !important;
+            }
+
+            &.error {
+                all: unset;
+            }
+        }
+
+        &-label {
+            all: unset;
+        }
+
+        // &-radio {
+        //     all: unset;
+
+        //     input[type="radio"] {
+        //         all: unset;
+
+        //         &:focus,
+        //         &:focus-visible {
+        //             outline: none !important;
+        //             box-shadow: none !important;
+        //         }
+        //     }
+        // }
+    }
+
+    // Reset form components
+    :where(.css-dev-only-do-not-override-49qm).ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+        border: none !important;
+    }
+
+    // .ant-select {
+    // outline: none !important;
+    //   all: unset;
+
+    //   &-selector {
+    //     all: unset !important;
+    //   }
+
+    //   &-arrow {
+    //     all: unset;
+    //   }
+    // }
+
+    // .ant-checkbox {
+    //     all: unset;
+
+    //     &-wrapper {
+    //         all: unset;
+    //     }
+
+    //     &-inner {
+    //         all: unset;
+    //     }
+    // }
+
+    // .ant-radio {
+    //     &-group {
+    //         all: unset;
+    //     }
+
+    //     &-wrapper {
+    //         all: unset;
+    //     }
+
+    //     &-button {
+    //         all: unset;
+    //     }
+    // }
+
+    .ant-switch {
+        all: unset;
+
+        &-handle {
+            all: unset;
+        }
+    }
+
+    // .ant-input {
+    //     all: unset;
+
+    //     &-textarea {
+    //         all: unset;
+    //     }
+
+    //     &-affix-wrapper {
+
+    //         &:focus,
+    //         &-focused {
+    //             outline: none !important;
+    //             box-shadow: none !important;
+    //             border-color: inherit !important;
+    //         }
+    //     }
+    // }
+
+    // Reset button styles with focus removal
+    // .button-container {
+    //   .cancel-button,
+    //   .submit-button {
+    //     all: unset;
+
+    //     &:focus,
+    //     &:focus-visible {
+    //       outline: none !important;
+    //       box-shadow: none !important;
+    //     }
+    //   }
+    // }
+
+    // Reset text styles
+    .ant-typography {
+        all: unset;
+    }
+
+    // Reset TreeSelect styles
+    .ant-tree-select {
+        all: unset;
+
+        &-dropdown {
+            all: unset;
+        }
+    }
+
+    // Reset DateTimePicker styles
+    .ant-picker {
+        all: unset;
+
+        &-input {
+            // all: unset;
+
+            input {
+
+                &:focus,
+                &:focus-visible {
+                    outline: none !important;
+                    box-shadow: none !important;
+                }
+            }
+        }
+    }
+
+    .ant-picker .ant-picker-input input::placeholder {
+        color: #abaaaa !important;
+      }
+      
+
+    // Remove active state styles
+    .ant-btn-primary:active,
+    .ant-select-item-option-active,
+    .ant-select-item-option-selected {
+        outline: none !important;
+        box-shadow: none !important;
+        border-color: inherit !important;
+    }
+
+    .ant-radio {
+        display: inline-block;
+        position: relative;
+
+        .ant-radio-inner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #d9d9d9;
+            border-radius: 50%;
+            background-color: #fff;
+            transition: all 0.3s;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 104%;
+                left: 104%;
+                width: 8px;
+                height: 8px;
+                background-color: var(--primary-color);
+                border-radius: 50%;
+                transform: scale(0) translate(-50%, -50%);
+                transition: all 0.3s;
+            }
+        }
+
+        &.ant-radio-checked .ant-radio-inner {
+            border-color: var(--primary-color);
+
+            &::after {
+                transform: scale(1) translate(-50%, -50%);
+            }
+        }
+    }
+
+    .ant-select-outlined.ant-select-multiple .ant-select-selection-item {
+        background: var(--secondary-color);
+        border: 1px solid transparent;
+    }
+
+}
+
+.ant-picker-dropdown{
+    .ant-picker-time-panel-column >li.ant-picker-time-panel-cell-selected .ant-picker-time-panel-cell-inner {
+        background: #6452ec;
+        color: #fff;
+    }
+    
+    .ant-btn-variant-solid {
+        color: #fff;
+        background: #6452ec;
+    }
+
+    :where(.css-dev-only-do-not-override-1261szd).ant-btn-variant-solid:not(:disabled):not(.ant-btn-disabled):hover {
+        background: rgb(154, 141, 253);
+        color: #fff;
+    }
+    
+    .ant-picker-cell-selected {
+        .ant-picker-cell-inner {
+          color: #fff !important;
+          border-color: transparent !important;
+          background: #6452ec !important;
+        }
+      }
+    
+      .ant-picker-cell-today .ant-picker-cell-inner::before {
+        border-color: #6452ec !important;
+      }
+}
+    

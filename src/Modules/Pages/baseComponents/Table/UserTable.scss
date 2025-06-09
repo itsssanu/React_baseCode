@@ -1,0 +1,62 @@
+.hostel-ant-table {
+    background: #ffffff;
+    border-radius: 10px;
+  }
+  
+  .hostel-ant-table .ant-table-thead>tr>th {
+    background: #ffffff;
+    color: black;
+    font-weight: 500;
+    height: 53px;
+  }
+  
+  .hostel-ant-table .ant-table-tbody>tr:hover {
+    // background: #c5c5c5;
+    cursor: pointer;
+  }
+  
+  .hostel-ant-table .ant-table-tbody>tr>td {
+    border-bottom: 1px solid #c4c4c4;
+  }
+  
+  .hostel-ant-table-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0;
+  }
+  
+  .hostel-ant-table-pagination .ant-pagination-item {
+    background: transparent;
+    border: 1px solid #6452ec !important;
+    border-radius: 50%;
+  }
+  
+  .hostel-ant-table-pagination .ant-pagination-item a {
+    color: #6452ec !important;
+  }
+  
+  .hostel-ant-table-pagination .ant-pagination-item-active {
+    background: #6452ec !important;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .hostel-ant-table-pagination .ant-pagination-item-active a {
+    color: white !important;
+  }
+  
+  .hostel-ant-table-pagination .ant-pagination-prev,
+  .hostel-ant-table-pagination .ant-pagination-next {
+    border: none;
+  }
+  
+  .hostel-ant-table-pagination .ant-pagination-prev:hover,
+  .hostel-ant-table-pagination .ant-pagination-next:hover {
+    color: #6452ec !important;
+  }
+  
+  .hostel-ant-table-pagination .ant-pagination-prev .anticon,
+  .hostel-ant-table-pagination .ant-pagination-next .anticon {
+    color: rgb(0, 0, 0);
+  }

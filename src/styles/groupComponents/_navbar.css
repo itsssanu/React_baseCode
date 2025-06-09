@@ -1,0 +1,31 @@
+.location-dropdown-overlay {
+  .ant-dropdown-menu {
+    background: #ffff;
+
+    .ant-dropdown-menu-item {
+      padding: 3px 10px;
+
+      &:hover {
+        background-color: #ffffff; 
+        color: #000000; 
+        cursor: default; 
+      }
+      .inside-location-dropdown .ant-menu-item {
+        /* font-weight: normal;  */
+        color: black;
+      }
+    
+      
+      .inside-location-dropdown .ant-menu-item:hover { 
+        background-color: #714DA3; 
+        color: #ffffff;
+
+      }
+      
+      .inside-location-dropdown .ant-menu-item-selected {
+        background-color: #714DA3; 
+        color: #ffffff;
+      }
+    }
+  }
+}
